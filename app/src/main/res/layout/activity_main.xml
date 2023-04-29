@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignTop="@id/Bio"
+    android:layout_margin="10dp"
+    android:gravity="center"
+
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Bio"
+        android:layout_width="188dp"
+        android:layout_height="38dp"
+        android:layout_margin="20dp"
+        android:visibility="visible"
+        android:text="my profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="189dp"
+        android:layout_height="111dp"
+        android:layout_margin="20dp"
+
+        app:srcCompat="@drawable/profile2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="20dp"
+        android:text="Zaina Amous" />
+
+    <EditText
+        android:id="@+id/hobtext"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="insert hobby"
+
+        android:inputType="text"
+        android:onClick="show"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:layout_margin="20dp"
+        android:onClick="show"
+        />
+
+    <TextView
+        android:id="@+id/hobby"
+        android:layout_width="334dp"
+        android:layout_height="46dp"
+        android:layout_margin="15dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="358dp"
+        android:layout_height="111dp"
+        android:scrollbars="vertical"
+        android:text="hello my name is Zaina im a computer science student at Birzeit university"
+
+        />
+
+
+</LinearLayout>
